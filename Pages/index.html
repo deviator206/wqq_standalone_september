@@ -10,7 +10,8 @@
 
     </head>
     <body>
-<script type="text/javascript">
+
+        <script type="text/javascript">
             /* STARTING POINT*/
             var _gMainApplication
             var documentPath = "Documents/";
@@ -249,7 +250,6 @@
         </script>
 
         <script type="html/template" id="loading_screen_ui">
-			<div class='banner-img'> </div>
             <div id="loadingMessage" class="loader_wanted" style="height: 100%; width: 100%;">
             <div id="loader_anim" style=" width: 100%; padding-top: 30%;">
             <div id="loader-1" class="quiz-number-loader" style="display: inline-block;">
@@ -273,7 +273,7 @@
         </script>
 
         <script type="html/template" id="landing_screen_ui">
-		<div class='banner-img'> </div>
+			<div class='banner-img-container'><div class='banner-img'> </div></div>
             <div class='home-question-text'>Why do smart women want to work at Accenture?</div>
             <div class='button-text-container'>
             <div class='landing-intro-text'>
@@ -288,7 +288,7 @@
         </script>
 
         <script type="html/template" id="intro_screen_ui">
-			<div class='banner-img'> </div>
+			<div class='banner-img-container'><div class='banner-img'> </div></div>
             <div class='landing-title'>Introduction</div>
             <div class='button-text-container'>
             <div class='landing-intro-text'>
@@ -304,7 +304,7 @@
         </script>
 
         <script type="html/template" id="game_screen_ui">
-		<div class='banner-img'> </div>
+			<div class='banner-img-container'><div class='banner-img'> </div></div>
             <div class='time-number-container'>
             <div class='time-container-layout'>
             <div id="timerComponent" class='time-container'>01:47</div>
@@ -350,7 +350,7 @@
         </script>
 
         <script type="html/template" id="end_screen_ui">
-		<div class='banner-img'> </div>
+			<div class='banner-img-container'><div class='banner-img'> </div></div>
             <div class='congrats-greater-than-img-container'>
             <div class='congrats-greater-than-img'></div>
             </div>
@@ -370,6 +370,7 @@
             <div id="twitter" class='social-icon-container twitter-icon'></div>
             <div id="facebook" class='social-icon-container facebook-icon'></div>
             </div>
+			<div class='be-greater-than-text'>Be greater than.</div>
             </div>
             <div class='award-img award-img-container'></div>
         </script>
@@ -380,15 +381,16 @@
         Initializing...
         </div>
         </div>
-        </div> -->
-
-        <div style="display: block; text-align: center; height: 655px; width: 900px; margin: auto; overflow: hidden; font-size: 30px; background: rgb(42, 67, 133);" id="loadingScreen"><div id="loadingMessage" class="loader_wanted"><div id="loader_anim" style=" width: 900px; position:absolute; top: 60%;  font-size:30px;color:yellow;">Initializing...</div></div></div>
+        </div> -->		
+        <div style="display: block;    background: rgb(42, 67, 133); background-size: 100% 100%; text-align: center;   height: 100%;  width: 100%;  margin: auto;  overflow: hidden;"  id="loadingScreen" >
+            Initializing...
+        </div>
         <div id="landingPage" style="display: none;" class="home-page-bg"></div>
         <div id="introductionPage" style="display: none;" class="page-bg"></div>
         <div id="gamePage" style="display: none;" class="page-bg"></div>
         <div id="endPage" style="display: none;" class="congrats-page-bg"></div>
 
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
             function onLinkedInLoad() {
                 console.log(" linkedin loaded");
             }
@@ -398,7 +400,7 @@
             api_key:75v0g9xaw9gxzc
 			onLoad:onLinkedInLoad
 			authorize:true
-        </script>
+        </script> -->
 
     </body>
 </html>
