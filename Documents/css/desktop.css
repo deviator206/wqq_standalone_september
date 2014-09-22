@@ -317,7 +317,15 @@ body{
 .banner-img-container{
 	padding-top: 2%;
 }
-a:-webkit-any-link, a:-moz-any-link, a:any-link{
+a:-webkit-any-link{
+	color: #AA1133 !important;
+	text-decoration: none !important;
+}
+a:-moz-any-link{
+	color: #AA1133 !important;
+	text-decoration: none !important;
+}
+.answer-text a{
 	color: #AA1133 !important;
 	text-decoration: none !important;
 }
