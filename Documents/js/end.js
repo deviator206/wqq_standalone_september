@@ -87,7 +87,7 @@ EndScreen.prototype = {
         //replace time taken
         str = str.replace("<%time_taken%>", this.storeScore[1]);
         //add link
-        str = str.replace("<%url_for_game%>", location.href);
+        str = str.replace("<%url_for_game%>", resource_data.app_shorten_url);
 
         if(noencode === undefined)
         str = encodeURIComponent(str);
@@ -165,7 +165,17 @@ EndScreen.prototype = {
 
                  imgURL = "http://careers.accenture.com/in-en/team-culture/diversity/PublishingImages/quiz/end/fb_post.jpg";
                  
-                 if(IN.User !== undefined && IN.User.hasOwnProperty("authorize"))
+				 var checkIN = false
+				 try
+				 {
+					if(IN !== undefined)
+					 checkIN = true;
+				 }
+				 catch(e)
+				 {
+					checkIN = false;
+				 }
+                 if( checkIN && IN !== undefined && IN.User !== undefined && IN.User.hasOwnProperty("authorize"))
                  {
                     IN.User.authorize(function() {
                     //alert("authenticated");

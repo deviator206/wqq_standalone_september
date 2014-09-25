@@ -60,7 +60,7 @@ var question_data = {
 
             correct_answer : "3",
 
-            explanation : 'Developing High Performing Women is part of Accenture\’s  annual investment in training women. More than 1,500 women have participated in this program till date.'
+            explanation : 'Developing High Performing Women is part of Accenture\’s annual investment in training women. More than 1,500 women have participated in this program till date.'
 
  
 
@@ -496,9 +496,7 @@ var resource_data = {
 
             'pb10' : ['game/progress/pb10.png', null],
 
-            'pb11' : ['game/progress/pb11.png', null]
-
-			
+            'pb11' : ['game/progress/pb11.png', null],
 
            
 
@@ -546,7 +544,7 @@ var resource_data = {
 
       social_site_content_linkedin : 'I scored a <%badge_won%> Star in <%time_taken%> seconds in this fun quiz by Accenture. Click on the link to play and share your score! <%url_for_game%>',
 
-      app_shorten_url:'http://bit.ly/1xss6lu',
+      app_shorten_url:'http://www.accenture.com/women-quiz',
 
       caption_title:"Accenture's women quiz",
 
